@@ -27,59 +27,141 @@
     }
   </script>
     <style>
-        .font-family{
+       
+        .manrope{
             font-family: "Manrope", sans-serif;
+           
         }
+
+        
+    
     </style>
 </head>
-<body class="font-family bg-[#F4F4F4]">
+<body class="manrope ">
   <!-- header section start -->
-    <header >
-        <section class="w-11/12 md:w-4/5  m-auto bg-gradient-to-bottom from-[#FFFFFF] to-[#FFFFFF] ">
-          <!-- navbar  -->
-          <div class="flex items-center justify-between py-4">
-            <div class=" flex gap-2 items-center">
-              <div class="text-base bg-[#ABEF5F] rounded-full ">
-                <i class="fa-solid fa-arrow-right -rotate-45 p-2 md:p-3"></i>
+    <header class="bg-gradient-to-b from-gray-100 to-white pt-5 md:10 " >
+         <!-- navbar  -->
+        <section class="container mx-auto ">
+          <div class="flex items-center justify-between p-3  ">
+              <div class=" flex items-center">
+                  <i class=" fa-solid fa-arrow-right -rotate-45 bg-lime-400 px-3 py-2 rounded-full text-sm"></i>
+                  <a class="btn btn-ghost text-[#212121] text-2xl md:text-3xl font-extrabold" href="#">Rinterio</a>
               </div>
-              <div class="text-[#212121] text-2xl md:text-3xl font-extrabold ">
-                 <h1>Rinterio</h1>
-              </div>
-            </div>
-            
               <div class="hidden lg:block">
                   <ul class="flex gap-4 md:text-base lg:text-lg">
-                    <li  class="text-[#494949] font-bold"><a >Home</a></li>
-                    <li class="text-[#737373]"><a>Services</a></li>
-                    <li class="text-[#737373]"><a>Portfolio</a></li>
-                    <li class="text-[#737373]"><a>Blogs</a></li>
-                    <li class="text-[#737373]"><a>Contact Us</a></li> 
+                    <li class=" "><a class="btn btn-ghost text-[#494949] font-extrabold" href="">Home</a></li>
+                    <li><a class="btn btn-ghost text-[#737373] font-normal" href="">Services</a></li>
+                    <li><a class="btn btn-ghost text-[#737373] font-normal" href="">Portfolio</a></li>
+                    <li><a class="btn btn-ghost text-[#737373] font-normal" href="">Blogs</a></li>
+                    <li><a class="btn btn-ghost text-[#737373] font-normal" href="">Contact Us</a></li> 
                   </ul>
               </div>
               <div class="flex gap-4 items-center">
-                 <div class="md:flex gap-3 hidden md:block ">
-                      <div class="text-lg bg-[#FFFFFF] rounded-full border-2 border-[#E9E9E9]">
-                        <i class="fa-solid fa-magnifying-glass p-3"></i>
+                 <div class="md:flex hidden md:block gap-3 items-center ">
+                      <div class="flex gap-2 ">
+                        <i class="fa-solid fa-magnifying-glass px-3 py-2 bg-[#FFFFFF]  rounded-full border-2 border-[#E9E9E9] p-2 text-sm hover:bg-gray-300 text-gray-500"></i>
+                        <i class="fa-solid fa-cart-shopping px-3 py-2 bg-[#FFFFFF]  rounded-full border-2 border-[#E9E9E9] p-2 text-sm hover:bg-gray-300 text-gray-500"></i>
                       </div>
-                      <div class="text-lg bg-[#FFFFFF] rounded-full border-2 border-[#E9E9E9]">
-                        <i class="fa-solid fa-cart-shopping p-3"></i>
-                      </div>
-                      <div class="text-xl font-bold bg-[#ABEF5F] px-4 py-2 rounded-full ">
-                          <a class="">Book Consult  <i class="fa-solid fa-arrow-right bg-black -rotate-45 rounded-full p-1 text-white"></i> </a>
+                      <div class="btn text-xl font-extrabold bg-[#ABEF5F] px-4 py-2 rounded-full ">
+                          <a class="">Book Consult <i class="fa-solid fa-arrow-right bg-black -rotate-45 rounded-full p-1 text-white "></i> </a>
                       </div>
                  </div>
                    <!-- manu bar -->
                    <div class="text-lg bg-[#FFFFFF] rounded-full lg:hidden">
-                    <i class="fa-solid fa-bars p-3"></i>
+                        <div class="dropdown dropdown-end">
+                          <div tabindex="0" role="button" class=""><i class="fa-solid fa-bars p-3"></i></div>
+                            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow cursor-pointer mt-4">
+                              <li class="text-[#494949]"><a>Home</a></li>
+                              <li class="text-[#737373]"><a>Services</a></li>
+                              <li class="text-[#737373]"><a>Portfolio</a></li>
+                              <li class="text-[#737373]"><a>Blogs</a></li>
+                              <li class="text-[#737373]"><a>Contact Us</a></li> 
+                            </ul>
+                        </div>
                    </div>
               </div>
           </div>
+          <!-- banner -->
+          <div class="text-center p-3">
+            <!-- banner image -->
+               <div class="px-5">
+                  <img class="m-auto mb-5" src="assets/banner.png" alt="">
+                </div>
+                <!-- banner text-area -->
+                <div class="mb-20">
+                    <h1 class="text-[#212121] text-[27px] md:text-5xl lg:text-[68px] font-extrabold mb-5 ">A barn house of this design has a striking appearance</h1>
+                    <p class=" md:px-32 lg:px-36 text-[#494949] font-medium text-xs md:text-sm lg:text-base mb-10">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                    <button class="btn bg-[#ABEF5F80] sm:btn-sm md:btn-md lg:btn-lg rounded-full border-1 border-[#ABEF5F]"><a class="text-[#212121] text-xl font-bold flex gap-3 items-center">View Details<i class=" fa-solid fa-arrow-right -rotate-45 bg-lime-400 px-3 py-2 rounded-full text-sm"></i></a></button>
+                </div>
+           </div>
         </section>
-        
+          <!-- banner -->
     </header>
      <!-- main section start -->
-    <main>
-
+    <main class=" bg-[#F4F4F4] ">
+        <!-- about section -->
+         <section class="container mx-auto">
+            <div class="relative grid grid-cols-1 lg:grid-cols-2 py-14 gap-7 w-full p-3">
+            <!-- about text area -->
+                <div class="leading-10 ">
+                   <div class="text-center md:text-left">
+                    <div class="absolute top-3 -left-4"><img src="assets/Vector.png" alt=""></div>
+                    <button class="btn bg-[#FFFFFF] rounded-full px-6 py-3 text-[#494949] text-sm lg:text-base font-bold mb-4"><i class=" fa-solid fa-arrow-right"></i>About Us</button>
+                    <h2 class=" text-2xl md:text-3xl lg:text-[43px] lg:leading-[53px] text-[#212121] font-bold mb-4">We design thoughtful, liveable spaces</h2>
+                    <p class="text-[#494949] text-sm md:text-base font-medium leading-8 mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                   </div>
+                    <!-- two-card -->
+                   <div class="grid grid-cols-1 gap-6">
+                    <div class="card card-side bg-base-100 shadow-xl p-3 md:px-6 flex gap-3">
+                      <figure>
+                        <img src="assets/commercial.png" alt="Movie" />
+                      </figure>
+                      <div class="card-body p-0">
+                        <h2 class="card-title text-xl font-extrabold text-[#494949]">Commercial</h2>
+                        <p class="text-[#737373] text-xs md:text-base font-medium leading-7 ">The barn house captivates with its blend  of rustic charm and modern.</p>
+                        
+                      </div>
+                    </div>
+                    <div class="card card-side bg-base-100 shadow-xl p-3 md:px-6 flex gap-3">
+                      <figure>
+                        <img src="assets/residential.png" alt="Movie" />
+                      </figure>
+                      <div class="card-body p-0">
+                        <h2 class="card-title text-xl font-extrabold text-[#494949]">Residential</h2>
+                        <p class="text-[#737373]  text-xs md:text-base font-medium leading-7">The barn house captivates with its blend of rustic charm and modern.</p>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+                <!-- about image area -->
+                <div  class="grid md:place-items-center lg:place-items-end  w-full" >
+                  <img class="w-full" src="assets/Rectangle.png" alt="picture">
+                </div>
+            </div>
+            <!-- card box -->
+            <div class="card card-side bg-base-100 shadow-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-10">
+              <div class="card-body text-center">
+                <i class="fa-regular fa-comment-dots text-4xl text-[#737373] "></i>
+                <h2 class="text-[#494949]  text-2xl md:text-3xl lg:text-4xl font-extrabold">235+</h2>
+                <p class="text-[#737373] text-sm md:text-base font-medium">Happy Client Review</p>
+              </div>
+              <div class="card-body text-center">
+                <i class="fa-solid fa-warehouse text-3xl text-[#737373]"></i>
+                <h2 class="text-[#494949]  text-2xl md:text-3xl lg:text-4xl font-extrabold">235+</h2>
+                <p class="text-[#737373] text-sm md:text-base font-medium">Happy Client Review</p>
+              </div>
+              <div class="card-body text-center">
+                <i class="fa-solid fa-users text-3xl text-[#737373]"></i>
+                <h2 class="text-[#494949]  text-2xl md:text-3xl lg:text-4xl font-extrabold">235+</h2>
+                <p class="text-[#737373] text-sm md:text-base font-medium">Happy Client Review</p>
+              </div>
+              <div class="card-body text-center">
+                <i class="fa-solid fa-user-group text-3xl text-[#737373]"></i>
+                <h2 class="text-[#494949]  text-2xl md:text-3xl lg:text-4xl font-extrabold">235+</h2>
+                <p class="text-[#737373] text-sm md:text-base font-medium">Happy Client Review</p>
+              </div>
+            </div>
+         </section>
     </main>
      <!-- footer section start -->
     <footer>
